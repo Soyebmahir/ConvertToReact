@@ -1,16 +1,20 @@
 import { useEffect, useState } from "react";
 import StudentTable from "../StudentTable/StudentTable";
+import { studentData } from "../../utils/studentData";
 
 const StudentInfo = () => {
-  const [studentInfo, setStudentInfo] = useState([]);
-  useEffect(() => {
-    fetch("/student.json")
-      .then((res) => res.json())
-      .then((data) => {
-        setStudentInfo(data);
-      });
-  }, []);
+  //   const [studentInfo, setStudentInfo] = useState([]);
+  //   useEffect(() => {
+  //     fetch("/student.json")
+  //       .then((res) => res.json())
+  //       .then((data) => {
+  //         setStudentInfo(data);
+  //       });
+  //   }, []);
   //   console.log(studentInfo);
+
+  //Since useEffect topic didnt covered in the first module
+  const studentInfo = studentData;
   return (
     <section className="py-24 lg:pt-[120px] lg:pb-28">
       <div className="container">
