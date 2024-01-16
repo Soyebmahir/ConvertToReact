@@ -10,7 +10,7 @@ const StudentInfo = () => {
         setStudentInfo(data);
       });
   }, []);
-  console.log(studentInfo);
+  //   console.log(studentInfo);
   return (
     <section className="py-24 lg:pt-[120px] lg:pb-28">
       <div className="container">
